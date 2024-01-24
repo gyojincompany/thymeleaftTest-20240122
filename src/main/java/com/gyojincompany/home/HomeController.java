@@ -46,10 +46,12 @@ public class HomeController {
 			memberDto.setId("tiger"+i);
 			memberDto.setName("길동"+i);
 			memberDto.setEmail("tiger"+i+"@abc.com");
-			memberDto.setAge(i+20);
+			memberDto.setAge(i+15);
 			
 			memberDtos.add(memberDto);
 		}
+		
+		model.addAttribute("str", "OO");
 		
 		model.addAttribute("memberDtos", memberDtos);
 		
