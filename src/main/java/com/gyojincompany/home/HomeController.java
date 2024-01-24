@@ -57,6 +57,11 @@ public class HomeController {
 		
 		return "ifTest";
 	}
+	
+	@GetMapping(value = "include")
+	public String include() {
+		return "includeTest";
+	}
 
 	
 	
